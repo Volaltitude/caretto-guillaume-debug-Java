@@ -1,4 +1,6 @@
-package com.hemebiotech.analytics;
+package com.hemebiotech.analytics.reader;
+
+import com.hemebiotech.analytics.reader.ISymptomReader;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -23,7 +25,7 @@ public class ReadSymptomDataFromFile implements ISymptomReader {
 	}
 	
 	@Override
-	public List<String> GetSymptoms() {
+	public List<String> getSymptoms() {
 		ArrayList<String> result = new ArrayList<>();
 		
 		if (filepath != null) {
