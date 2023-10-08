@@ -6,10 +6,17 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * File reader line by line
+ *
+ */
 public class SymptomReader implements ISymptomReader {
 
 	private final String filepath;
-
+	/**
+	 *
+	 * @param filepath path to the file to read
+	 */
 	public SymptomReader(String filepath) {
 		this.filepath = filepath;
 	}

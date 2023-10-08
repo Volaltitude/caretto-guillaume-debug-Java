@@ -21,10 +21,18 @@ public class SymptomCounter implements ISymptomCounter{
         this.sortedSymptoms.putAll(this.symptoms.stream().collect(Collectors.groupingBy(e -> e, Collectors.counting())));
     }
 
+    /**
+     *
+     * @return a sorted and counted TreeMap of symptoms
+     */
     public TreeMap<String, Long> getSortedSymptoms() {
         return this.sortedSymptoms;
     }
 
+    /**
+     *
+     * @param symptoms  a raw listing of all Symptoms obtained from a data source, duplicates are possible/probable
+     */
     public void setSymptoms(List<String> symptoms) {
         this.symptoms = symptoms;
     }

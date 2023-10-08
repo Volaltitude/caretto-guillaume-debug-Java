@@ -2,13 +2,19 @@ package com.hemebiotech.analytics.writer;
 
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.HashMap;
 import java.util.TreeMap;
 
-public class SymptomWriter implements ISymptomWriter{
+/**
+ * File writer line by line
+ *
+ */
+public class SymptomWriter implements ISymptomWriter {
 
     private final String fileName;
-
+    /**
+     *
+     * @param fileName Name to the file to write
+     */
     public SymptomWriter(String fileName) {
         this.fileName = fileName;
     }
