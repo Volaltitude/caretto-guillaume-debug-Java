@@ -25,7 +25,6 @@ public class SymptomWriter implements ISymptomWriter {
             FileWriter writer = new FileWriter(this.fileName);
             for (String symptoms : symptomsMap.keySet()) {
                 String toWrite = symptoms + ":" + symptomsMap.get(symptoms);
-                System.out.println(toWrite);
                 writer.write(toWrite + "\n");
             }
             writer.close();
